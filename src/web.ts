@@ -8,3 +8,5 @@ export class CodeGetWeb extends WebPlugin implements CodeGetPlugin {
     return options;
   }
 }
+
+export {}
