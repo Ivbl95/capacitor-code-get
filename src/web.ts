@@ -7,6 +7,16 @@ export class CodeGetWeb extends WebPlugin implements CodeGetPlugin {
     console.log('ECHO', options);
     return options;
   }
+
+  checkUpdates(): void {
+    console.log('checkUpdates');
+  };
+  acceptInstall(options: { value: boolean }): void {
+    console.log('installUpdates', options);
+  };
+  rejectionInstall(options: { value: boolean }): void {
+    console.log('rejectionInstall', options);
+  };
 }
 
 export {}

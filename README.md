@@ -14,6 +14,9 @@ npx cap sync
 <docgen-index>
 
 * [`echo(...)`](#echo)
+* [`checkUpdates()`](#checkupdates)
+* [`acceptInstall(...)`](#acceptinstall)
+* [`rejectionInstall(...)`](#rejectioninstall)
 
 </docgen-index>
 
@@ -31,6 +34,41 @@ echo(options: { value: string; }) => Promise<{ value: string; }>
 | **`options`** | <code>{ value: string; }</code> |
 
 **Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
+
+--------------------
+
+
+### checkUpdates()
+
+```typescript
+checkUpdates() => void
+```
+
+--------------------
+
+
+### acceptInstall(...)
+
+```typescript
+acceptInstall(options: { value: boolean; }) => void
+```
+
+| Param         | Type                             |
+| ------------- | -------------------------------- |
+| **`options`** | <code>{ value: boolean; }</code> |
+
+--------------------
+
+
+### rejectionInstall(...)
+
+```typescript
+rejectionInstall(options: { value: boolean; }) => void
+```
+
+| Param         | Type                             |
+| ------------- | -------------------------------- |
+| **`options`** | <code>{ value: boolean; }</code> |
 
 --------------------
 
